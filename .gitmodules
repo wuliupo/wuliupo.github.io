@@ -1,9 +1,12 @@
 [submodule "runoob"]
 	path = runoob
 	url = https://github.com/wuliupo/runoob.git
+	branch = master
 [submodule "es6tutorial"]
 	path = es6tutorial
 	url = https://github.com/wuliupo/es6tutorial.git
+	branch = gh-pages
 [submodule "structure"]
 	path = structure
 	url = https://github.com/wuliupo/structure.git
+	branch = master
