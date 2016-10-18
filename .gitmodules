@@ -1,0 +1,16 @@
+[submodule "runoob"]
+	path = runoob
+	url = git@github.com:wuliupo/runoob.git
+	branch = master
+[submodule "bootstrap"]
+	path = bootstrap
+	url = git@github.com:wuliupo/getbootstrap.git
+	branch = master
+[submodule "es6tutorial"]
+	path = es6tutorial
+	url = git@github.com:wuliupo/es6tutorial.git
+	branch = gh-pages
+[submodule "structure"]
+	path = structure
+	url = git@github.com:wuliupo/structure.git
+	branch = master
