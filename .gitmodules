@@ -6,15 +6,7 @@
 	path = es6tutorial
 	url = https://github.com/wuliupo/es6tutorial.git
 	branch = gh-pages
-[submodule "structure"]
-	path = structure
-	url = https://github.com/wuliupo/structure.git
-	branch = master
 [submodule "bootstrap"]
 	path = bootstrap
 	url = https://github.com/wuliupo/getbootstrap.git
 	branch = master
-[submodule "jstutorial"]
-	path = jstutorial
-	url = https://github.com/wuliupo/jstutorial.git
-	branch = gh-pages
