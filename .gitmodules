@@ -17,3 +17,6 @@
 [submodule "structure"]
 	path = structure
 	url = https://github.com/wuliupo/structure.git
+[submodule "game"]
+	path = game
+	url = https://github.com/wuliupo/game.git
