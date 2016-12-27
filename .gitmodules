@@ -10,10 +10,6 @@
 	path = bootstrap
 	url = https://github.com/wuliupo/getbootstrap.git
 	branch = master
-[submodule "jstutorial"]
-	path = jstutorial
-	url = https://github.com/wuliupo/jstutorial.git
-	branch = gh-pages
 [submodule "structure"]
 	path = structure
 	url = https://github.com/wuliupo/structure.git
