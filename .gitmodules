@@ -1,6 +1,3 @@
-[submodule "runoob"]
-	path = runoob
-	url = https://github.com/wuliupo/runoob.git
 [submodule "bootstrap"]
 	path = bootstrap
 	url = https://github.com/wuliupo/getbootstrap.git
