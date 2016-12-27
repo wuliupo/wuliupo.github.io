@@ -13,6 +13,3 @@
 [submodule "tool"]
 	path = tool
 	url = https://github.com/wuliupo/tool.git
-[submodule "js"]
-	path = js
-	url = https://github.com/wuliupo/jstutorial.git
