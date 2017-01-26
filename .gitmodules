@@ -10,3 +10,9 @@
 [submodule "tool"]
 	path = tool
 	url = https://github.com/wuliupo/tool.git
+[submodule "bootstrap1"]
+	path = bootstrap1
+	url = https://github.com/wuliupo/bootstrap1
+[submodule "bootstrap2"]
+	path = bootstrap2
+	url = https://github.com/wuliupo/bootstrap2
