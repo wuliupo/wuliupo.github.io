@@ -10,7 +10,7 @@
 body{font-size:14px;color:#333;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}
 hr{border:0;border-top:1px solid #DDD;}
 .container{margin:0 auto;padding:10px;max-width:600px;}
-.section{margin:20px 0;padding:10px 20px;}
+.section{margin:20px 0;padding:10px 20px;background-color:#fff;transition:all .5s ease;}
 .pull-right{float:right;}
 h1{margin:20px 0;}
 h3{margin-bottom:10px;padding:10px 0;border-bottom:1px solid #CCC;}
@@ -22,13 +22,13 @@ li{margin-bottom:10px;}
 .theme-box span{display:inline-block;margin-left:10px;border:1px solid #CCC;width:30px;height:20px;cursor:pointer;}
 /* gray theme */
 .gray{background-color:#f4f8fb;}
-.gray .section{background-color:#fff;border-radius:5px;box-shadow:8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);transition:all .5s ease;}
-.gray .section:hover {box-shadow:0 0 1px rgba(39,44,49,.1), 0 3px 16px rgba(39,44,49,.07);transition:all .3s ease;transform:translate3D(0, -1px, 0);}
+.gray .section{border-radius:5px;box-shadow:8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);}
+.gray .section:hover {box-shadow:0 0 1px rgba(39,44,49,.1), 0 3px 16px rgba(39,44,49,.07);transform:translate3D(0, -1px, 0);}
 /* ovilia theme */
 .ovilia{background-color:#9BE4D8;color:#FFF;}
-.ovilia .section{background-color:white;-webkit-border-radius:20px;border-radius:20px;-webkit-box-shadow:0 0 30px 0 rgba(34,195,170,0.5);box-shadow:0 0 30px 0 rgba(34,195,170,0.5);color:#333;}
+.ovilia .section{border-radius:20px;box-shadow:0 0 30px 0 rgba(34,195,170,0.5);color:#333;}
 /* white theme */
-.white{}
+.white{background-color:#FFF;}
 .white .section{margin:20px 0;padding:0;}
 </style>
 </head>
@@ -37,9 +37,9 @@ li{margin-bottom:10px;}
 <h1>pauli</h1>
 
 <div class="theme-box">
-	<span style="background-color: #FFF;" onclick="document.body.className='white'"></span>
-	<span style="background-color: #EEE;" onclick="document.body.className='gray'"></span>
-	<span style="background-color: #9BE4D8;" onclick="document.body.className='ovilia'"></span>
+	<span class="white"></span>
+	<span class="gray"></span>
+	<span class="ovilia"></span>
 </div>
 
 <div class="section">
@@ -61,8 +61,15 @@ li{margin-bottom:10px;}
 	<li><a href="tool/share.htm">微博分享小工具</a></li>
 	<li><a href="tool/color.htm">RGB颜色转换十六进制颜色</a></li>
 	<li><a href="tool/format.htm">代码压缩、格式化</a></li>
+	<li><a href="tool/char.htm">HTML特殊字符</a></li>
+	<li><a href="jade">Jade语法文档（Jade/Pug syntax docs）</a></li>
+	<li>Markdown语法：<a href="tool/md.htm">Basics</a>，<a href="tool/markdown.htm">完整</a></li>
 	<li><a href="tool/regexp.htm">正则表达式（Regular expression）</a></li>
+	<li><a href="tool/rating.htm">评级、几颗星？</a></li>
+	<li><a href="tool/id.htm">随机证件号（姓名、身份证、银行卡、手机号、密码）</a></li>
 	<li><a href="game/yys/">阴阳师怪物列表</a></li>
+	<li><a href="sketch">Sketch ~ Canvas</a></li>
+	<li><a href="law">法律条文</a></li>
 </ul>
 </div>
 
@@ -76,5 +83,15 @@ li{margin-bottom:10px;}
 
 <div class="pull-right footer">Hosted on Github pages</div>
 </div>
+
+<script>
+  document.querySelector('.theme-box').addEventListener('click', function(event) {
+		var target = event.target;
+    if (target.tagName === 'SPAN') {
+			document.body.className = target.className;
+		}
+  });
+</script>
+
 </body>
 </html>
