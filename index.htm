@@ -6,48 +6,75 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link rel="shortcut icon" href="favicon.png" type="image/png" />
 <style>
+*,*:after,*:before{margin:0;padding:0;box-sizing:border-box;}
 body{font-size:14px;color:#333;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}
 hr{border:0;border-top:1px solid #DDD;}
-.container{margin:20px auto;width:calc(100% - 10px);max-width:600px;}
+.container{margin:0 auto;padding:10px;max-width:600px;}
+.section{margin:20px 0;padding:10px 20px;}
 .pull-right{float:right;}
-h3{margin-top:30px;}
+h1{margin:20px 0;}
+h3{margin-bottom:10px;padding:10px 0;border-bottom:1px solid #CCC;}
+ul{margin:10px 10px 10px 20px;}
 li{margin-bottom:10px;}
+.footer{margin:10px 10px 50px;}
+/* theme choose */
+.theme-box{padding:10px;text-align:right;margin-top:-56px;}
+.theme-box span{display:inline-block;margin-left:10px;border:1px solid #CCC;width:30px;height:20px;cursor:pointer;}
+/* gray theme */
+.gray{background-color:#f4f8fb;}
+.gray .section{background-color:#fff;border-radius:5px;box-shadow:8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);transition:all .5s ease;}
+.gray .section:hover {box-shadow:0 0 1px rgba(39,44,49,.1), 0 3px 16px rgba(39,44,49,.07);transition:all .3s ease;transform:translate3D(0, -1px, 0);}
+/* ovilia theme */
+.ovilia{background-color:#9BE4D8;color:#FFF;}
+.ovilia .section{background-color:white;-webkit-border-radius:20px;border-radius:20px;-webkit-box-shadow:0 0 30px 0 rgba(34,195,170,0.5);box-shadow:0 0 30px 0 rgba(34,195,170,0.5);color:#333;}
+/* white theme */
+.white{}
+.white .section{margin:20px 0;padding:0;}
 </style>
 </head>
-<body>
+<body class="gray">
 <div class="container">
 <h1>pauli</h1>
+
+<div class="theme-box">
+	<span style="background-color: #FFF;" onclick="document.body.className='white'"></span>
+	<span style="background-color: #EEE;" onclick="document.body.className='gray'"></span>
+	<span style="background-color: #9BE4D8;" onclick="document.body.className='ovilia'"></span>
+</div>
+
+<div class="section">
 <h3>软件开发</h3>
-<hr>
 <ul>
 	<li><a href="structure">知识点拓扑图（Knowledge topology）</a></li>
-	<li><a href="git">Git recipes</a></li>
-	<li><a href="linux">Linux command</a></li>
-	<li><a href="docker">Docker 从入门到实践</a></li>
-	<li><a href="jstutorial">JS标准参考教程</a></li>
-	<li><a href="es6tutorial">ECMAScript 6 入门</a></li>
+	<li><a href="git">Git 中文教程（Git recipes）</a></li>
+	<li><a href="linux">Linux命令大全（Linux command）</a></li>
+	<li><a href="docker">Docker 从入门到实践（Docker practice）</a></li>
+	<li><a href="jstutorial">JavaScript 标准参考教程（JS tutorial）</a></li>
+	<li><a href="es6tutorial">ECMAScript 6 入门（ES6 tutorial）</a></li>
 	<li><a href="getbootstrap">Bootstrap 3</a>, <a href="bootstrap2">Bootstrap 2</a>, <a href="bootstrap1">Bootstrap 1</a></li>
 </ul>
+</div>
 
+<div class="section">
 <h3>练习题</h3>
-<hr/>
 <ul>
 	<li><a href="tool/share.htm">微博分享小工具</a></li>
 	<li><a href="tool/color.htm">RGB颜色转换十六进制颜色</a></li>
 	<li><a href="tool/format.htm">代码压缩、格式化</a></li>
-	<li><a href="tool/regexp.htm">正则表达式</a></li>
+	<li><a href="tool/regexp.htm">正则表达式（Regular expression）</a></li>
 	<li><a href="game/yys/">阴阳师怪物列表</a></li>
 </ul>
+</div>
 
+<div class="section">
 <h3>个人信息</h3>
-<hr/>
 <ul>
 	<li><a href="http://weibo.com/pauli">新浪微博：@pauli</a></li>
 	<li><a href="github.htm">Github projects</a></li>
 </ul>
+</div>
 
-<hr/>
-<div class="pull-right">Hosted on Github pages</div>
+<div class="pull-right footer">Hosted on Github pages</div>
 </div>
 </body>
 </html>
